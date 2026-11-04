@@ -141,3 +141,37 @@
 - **C# and .NET** — ASP.NET Core; DDD and CQRS; WPF with MVVM for test-rig and machine GUIs
 - **TypeScript backends** — Node.js with Express or Fastify; async integration with third-party APIs
 - **Qt/QML** — QML bound to C++ models; threading off the UI thread; 3D visualisation
+
+
+
+# Skills to learn, ranked by importance
+
+Ranked by how much each skill moves me toward a good mid-level job in Flanders/Brussels, starting from a CS / data / AI engineering background plus a mechanical engineering bachelor.
+
+![Skills learning map](skills-map.svg)
+
+The map places my background in the centre. Rings show effort (close = weeks, medium = 1–3 months, far = 3–6+ months), sectors group related skills, and numbers match the ranking below. `make_skills_map.py` generates it; `skills-map.mmd` is a Mermaid version.
+
+## Tier 1: biggest payoff
+1. **LLM evals and observability**: golden datasets, LLM-as-judge, regression checks in CI, Langfuse/LangSmith tracing.
+2. **Advanced LangGraph and agent SDKs**: human-in-the-loop interrupts, checkpoints, multi-agent setups, long-running flows, Pydantic AI / OpenAI Agents SDK.
+3. **MCP server design for products**: tool schemas written for models, per-user auth and permissions, cost tracking.
+4. **Production RAG retrieval**: hybrid search plus reranking, Azure AI Search with security trimming, ingestion pipelines.
+5. **Terraform, Kubernetes/Helm and Prometheus/Grafana**: modules, remote state, charts, monitoring.
+
+## Tier 2: toward physical AI and robotics
+6. **ROS 2 at production level**: QoS, tf2, lifecycle nodes, rosbag; then Nav2, ros2_control and MoveIt 2.
+7. **OpenCV and vision in production**: calibration (incl. hand-eye), detection and tracking with PyTorch, cameras and lighting.
+8. **Edge inference**: ONNX Runtime, TensorRT on Jetson, quantization.
+9. **Modern C++ (17/20)**: RAII, multithreading, CMake, GoogleTest.
+10. **Kalman filters and sensor fusion**: EKF/UKF, IMU fusion, robot_localization.
+
+## Tier 3: valuable extras
+11. **Model serving and lifecycle**: vLLM or Triton, model registry, canary deploys, drift monitoring.
+12. **Self-hosted fine-tuning**: LoRA/PEFT, dataset curation, evaluating against the base model.
+13. **LLM security and governance**: OWASP Top 10 for LLMs, guardrails, EU AI Act.
+14. **dbt plus Databricks Unity Catalog**.
+15. **Embedded basics**: Zephyr/FreeRTOS, CAN/CANopen, hardware test automation with PyVISA.
+
+## Suggested path
+Do 1–3 now for a stronger AI engineer role, and run 7 (OpenCV) and 10 (Kalman filters) alongside, then ROS 2 (6), to move toward physical AI over the next 6–12 months. C++, TensorRT, ros2_control/MoveIt and control theory come after that.
